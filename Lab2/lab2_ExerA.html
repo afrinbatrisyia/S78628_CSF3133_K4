@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Workshop 2026</title>
+</head>
+<body>
+
+    <header> <!-- Header section for event name and tagline -->
+        <h1>Programming Workshop 2026</h1>
+        <p>Empowering Students with Software Development Skills</p>
+    </header>
+
+    <nav> <!-- Navigation section with internal links -->
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <main>
+        <section id="about"> <!-- About the Event section -->
+            <h2>About the Event</h2>
+            <p>Welcome to our annual Faculty Programming Workshop! This event gives students hands-on experience in modern technology stacks.</p>
+
+            <article> <!-- First speaker article -->
+                <h3>Keynote Speaker: Dr. Ahmad</h3>
+                <p>Dr. Ahmad is a leading researcher in artificial intelligence and algorithms.</p>
+            </article>
+
+            <article> <!-- Second activity article -->
+                <h3>Featured Activity: Web Development Bootcamp</h3>
+                <p>An interactive hands-on coding session where participants build dynamic web applications.</p>
+            </article>
+        </section>
+
+        <section id="schedule"> <!-- Event Schedule section -->
+            <h2>Event Schedule</h2>
+            <table border="1"> <!-- Table with border attribute -->
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Venue</th>
+                        <th>Person in Charge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 AM - 09:30 AM</td>
+                        <td>Registration &amp; Welcome Refreshments</td>
+                        <td>Main Foyer</td>
+                        <td>Event Crew</td>
+                    </tr>
+                    <tr>
+                        <td>09:30 AM - 10:30 AM</td>
+                        <td>Keynote Address: Modern Web Trends</td>
+                        <td rowspan="2">Auditorium A</td> <!-- Rowspan example spanning 2 rows -->
+                        <td>Dr. Ahmad</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM - 12:30 PM</td>
+                        <td>Hands-on Session: Frontend Development</td>
+                        <td>Prof. Rokiah</td>
+                    </tr>
+                    <tr>
+                        <td>12:30 PM - 02:00 PM</td>
+                        <td colspan="3">Lunch Break</td> <!-- Colspan example spanning 3 columns -->
+                    </tr>
+                    <tr>
+                        <td>02:00 PM - 04:00 PM</td>
+                        <td>Workshop: Backend Integration &amp; APIs</td>
+                        <td>Computer Lab 3</td>
+                        <td>Mr. Megat</td>
+                    </tr>
+                    <tr>
+                        <td>04:00 PM - 05:00 PM</td>
+                        <td>Q&amp;A and Closing Ceremony</td>
+                        <td>Auditorium A</td>
+                        <td>Organising Committee</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register"> <!-- Registration section -->
+            <h2>Registration Form</h2>
+            <form action="register.html" method="post"> <!-- Form action and method -->
+                
+                <label for="fullname">Full Name:</label><br> <!-- Label for full name -->
+                <input type="text" id="fullname" name="fullname"><br><br> <!-- Text input for full name -->
+
+                <label for="matric">Matric Number:</label><br> <!-- Label for matric number -->
+                <input type="text" id="matric" name="matric"><br><br> <!-- Text input for matric -->
+
+                <label for="email">E-mail Address:</label><br> <!-- Label for email -->
+                <input type="email" id="email" name="email"><br><br> <!-- Text input for email -->
+
+                <label>Year of Study:</label><br> <!-- Label for radio group -->
+                <input type="radio" id="year1" name="year" value="1"> <!-- Radio button Year 1 -->
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="year" value="2"> <!-- Radio button Year 2 -->
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="year" value="3"> 
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="year" value="4"> 
+                <label for="year4">Year 4</label><br><br>
+
+                <label>Select Sessions to Join:</label><br> <!-- Label for checkboxes -->
+                <input type="checkbox" id="session1" name="sessions" value="keynote">
+                <label for="session1">Keynote Address</label><br>
+                <input type="checkbox" id="session2" name="sessions" value="frontend">
+                <label for="session2">Frontend Development Workshop</label><br>
+                <input type="checkbox" id="session3" name="sessions" value="backend"> 
+                <label for="session3">Backend Integration &amp; APIs</label><br><br>
+
+                <label for="programme">Programme / Faculty:</label><br> <!-- Dropdown label -->
+                <select id="programme" name="programme"> <!-- Drop-down select element -->
+                    <option value="">-- Please Select --</option>
+                    <option value="cs">Software Engineering</option>
+                    <option value="it">Maritime Informatic</option>
+                    <option value="is">Mobile Computing</option>
+                    <option value="ds">Data Analytic</option>
+                </select><br><br>
+
+                <input type="submit" value="Register Now"> <!-- Form submit button -->
+
+            </form>
+        </section>
+    </main>
+
+    <footer> <!-- Footer section -->
+        <p>Organised by: Faculty of Computing Committee</p>
+        <p>&copy; 2026 Programming Workshop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

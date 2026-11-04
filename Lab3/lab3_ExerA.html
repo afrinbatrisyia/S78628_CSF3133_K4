@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choco Bakery</title>
+</head>
+<body>
+    
+    <!-- Header and Navigation -->
+    <div id="header"> <h1>Choco Bakery</h1>
+        <p><span>Freshly baked pastries and breads</span></p>
+    </div>
+
+    <div id="nav"> <a href="#home">Home</a> | 
+        <a href="#menu">Menu</a> | 
+        <a href="#order">Place Order</a>
+    </div>
+
+<hr>
+
+    <!-- Content and Form -->
+    <div id="content">
+        <h2>Place Your Order</h2>
+        <p>Welcome! Please fill out the form below to order your treats.</p>
+
+        <!-- Fixed: Removed action="" to pass W3C validation -->
+        <form>
+            <p>
+                <label>Your Name:</label><br>
+                <input type="text" placeholder="Enter your name" required autofocus>
+            </p>
+
+            <p>
+                <label>Phone Number:</label><br>
+                <input type="tel" placeholder="012-3456789" required>
+            </p>
+
+            <p>
+                <label>Email:</label><br>
+                <input type="email" name="useremail" placeholder="student@email.com" required>
+            </p>
+
+            <p>
+                <label>Search Bakery Items (Carian):</label><br>
+                <input type="search" name="carian" placeholder="Search menu...">
+            </p>
+
+            <p>
+                <label>Pick-up Date (Tarikh):</label><br>
+                <input type="date" name="tarikh" required>
+            </p>
+
+            <p>
+                <label>Pick-up Time (Masa):</label><br>
+                <input type="time" name="masa" required>
+            </p>
+            <p>
+                <label>Choose Icing Colour (Pilih warna kegemaran anda):</label><br>
+                <input type="color" name="warnapilihan" value="#ffb6c1">
+            </p>
+
+            <p><input type="submit" value="Hantar"></p>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- 4. Sidebar Section -->
+    <div id="sidebar">
+        <h3>Price List</h3>
+        <ul>
+            <li>Cupcake &ndash; RM 3.00</li>
+            <li>Cake Slice &ndash; RM 9.90</li>
+        </ul>
+        <p>Orders &gt; 6 pieces get a free drink!</p>
+    </div>
+
+    <hr>
+
+    <!-- 5. Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 Choco Bakery&reg;. All rights reserved.</p>
+    </div>
+
+<!--Testing:
+        1. The browser prevents submission and highlights the first required field with a popup warning.
+        2. The browser blocks submission and displays a validation error because "myemail" 
+           is not a valid email address format because its missing the @ symbol.-->
+</body>
+</html>

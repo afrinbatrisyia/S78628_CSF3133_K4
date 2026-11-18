@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1B4F72; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white; 
+}
+
+header p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+nav li a.active {
+    background-color: #27ae60; 
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+section h2 {
+    color: #1B4F72;
+    margin-bottom: 15px;
+}
+
+#product {
+    border-collapse: collapse; 
+    width: 100%;
+    background-color: white;
+}
+
+#product th, 
+#product td {
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+#product th {
+    background-color: #1B4F72;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#product tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#product tr:hover {
+    background-color: #e6e6e6;
+}
+
+#product th:nth-child(3),
+#product td.price-right {
+    text-align: center;
+}
+
+footer {
+    background-color: #EFE6D8;
+    color: #2C2C2C;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}

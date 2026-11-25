@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f5ff;
+  color: #2f2440;
+  padding: 20px;
+}
+
+/* header */
+header {
+  background-color: #9b7ede;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #e4d8fc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+/* Input box */
+input[type="text"] {
+  padding: 7px;
+  border: 1px solid #c9b8eb;
+  border-radius: 5px;
+}
+
+/* Buttons and hover effect */
+button {
+  background-color: #a98ee8;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8462cf;
+}
+
+/* Layout for player vs computer */
+.arena {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+/* Fixed size for choice images */
+#playerImg,
+#computerImg {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #d4c4f5;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* History table styling */
+#history {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#history th,
+#history td {
+  border: 1px solid #d4c4f5;
+  padding: 8px;
+  text-align: left;
+}
+
+#history th {
+  background-color: #9b7ede;
+  color: white;
+}
+
+/* Footer text */
+footer {
+  text-align: center;
+  color: #6b5b85;
+  margin-top: 20px;
+}
